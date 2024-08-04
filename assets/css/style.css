@@ -158,6 +158,19 @@ body {
     margin-top: 70px;
 }
 
+.clients .logo a {
+    display: flex;
+    align-items: center;
+    height: 91px;
+    padding: 0px 42px;
+}
+
+.clients .logo a:hover {
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
 /* =====Works===== */
 
 .works {
