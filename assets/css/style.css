@@ -43,7 +43,7 @@ body {
 
 /* =====Header===== */
 
-.header {
+.wrap {
     height: 100vh;
     background-color: #e6f0ff;
     position: relative;
@@ -56,10 +56,20 @@ body {
     margin-right: auto;
 }
 
+.sticky {
+    position: sticky;
+    top: -26px;
+    z-index: 1;
+    background-color: #e6f0ff;
+    padding-top: 26px;
+}
+
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    /* padding-top: 38px; */
+    padding: 12px 0px;
+    /* background-color: red; */
 }
 
 .navbar ul {
@@ -100,7 +110,7 @@ body {
     font-size: 1.8rem;
     font-weight: 500;
     letter-spacing: 0.18px;
-    margin-top: 130px;
+    padding-top: 130px;
 }
 
 .info .title {
@@ -568,9 +578,12 @@ body {
     font-weight: 700;
 }
 
-.footer .list,
-.footer .desc {
+.footer .list {
     margin-top: 42px;
+}
+
+.footer .desc {
+    margin-top: 40px;
 }
 
 .footer .row-top {
@@ -579,7 +592,7 @@ body {
 }
 
 .footer .list .item {
-    margin-top: 18px;
+    margin-top: 21px;
 }
 
 .footer .list .item a,
@@ -611,6 +624,7 @@ body {
     margin-left: 11px;
     width: 28px;
     height: 28px;
+    background-color: #f9f9f9;
 }
 
 .footer .social .social-link:first-child {
