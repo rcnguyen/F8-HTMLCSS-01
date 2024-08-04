@@ -1,3 +1,7 @@
+html,
+body {
+    scroll-behavior: smooth;
+}
 html {
     font-size: 62.5%;
 }
@@ -44,7 +48,9 @@ body {
 /* =====Header===== */
 
 .wrap {
-    height: 100vh;
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 100px);
     background-color: #e6f0ff;
     position: relative;
 }
@@ -99,9 +105,9 @@ body {
     padding-right: 18px;
 }
 
-/* =====Hero===== */
+/* =====wrap===== */
 
-.hero .info {
+.wrap .info {
     width: 51%;
 }
 
@@ -110,7 +116,7 @@ body {
     font-size: 1.8rem;
     font-weight: 500;
     letter-spacing: 0.18px;
-    padding-top: 130px;
+    /* padding-top: 130px; */
 }
 
 .info .title {
@@ -135,7 +141,7 @@ body {
     border-radius: 12px;
 }
 
-.hero .thumnail {
+.wrap .thumnail {
     position: absolute;
     right: calc((100vw - 1110px) / 2 - 100px);
     bottom: 0px;
@@ -583,7 +589,7 @@ body {
 }
 
 .footer .desc {
-    margin-top: 40px;
+    margin-top: 42px;
 }
 
 .footer .row-top {
@@ -592,20 +598,25 @@ body {
 }
 
 .footer .list .item {
-    margin-top: 21px;
+    margin-top: 18px;
 }
 
-.footer .list .item a,
-.footer .desc {
+.footer .list .item a {
+    display: block;
+    margin-top: 18px;
     color: #7a7a7e;
     font-size: 1.6rem;
     font-weight: 400;
+    /* line-height: normal; */
     white-space: nowrap;
 }
 
 .footer .desc {
-    white-space: normal;
-    line-height: 1.75;
+    width: 257px;
+    color: #7a7a7e;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.8rem;
 }
 
 .footer .row {
